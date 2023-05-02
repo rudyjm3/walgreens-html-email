@@ -18,17 +18,25 @@
       body {
          font-size: 14px;
          margin: 0;
+         background-color: grey;
          /* background-color: #cccccc;
          background-color: #646464; */
       }
       table {
          border-spacing: 0;
+         border-collapse: collapse;
       }
       td {
+         border: 0;
          padding: 0;
       }
+      /* table, td, th {
+      border: 1px solid black;
+      } */
       img {
          border: 0;
+         width: 100%;
+         vertical-align: middle;
       }
       .wrapper {
          width: 100%;
@@ -41,8 +49,9 @@
          background-color: #fff;
          margin: 0 auto;         
          width: 100%;
-         max-width: 600px;
+         max-width: 640px;
          border-spacing: 0;
+         border-collapse: collapse;
          font-family: Helvetica,Arial,sans-serif;
          color: #171a1b;
          /* border: 1px solid red; */
@@ -60,7 +69,6 @@
          width: 100%;
          max-width: 288px;
          display: inline-block;
-         vertical-align: top;
          text-align: center;
       }
       
@@ -73,14 +81,14 @@
 <body>
 <!---- START OF HTML EMAIL ---->
    <center class="wrapper">
-      <table class="main" width="100%" border="0"cellspacing="0"cellpadding="0"> 
+      <table class="main" width="100%" border="0"cellspacing="0"cellpadding="0" style="background-color:pink;"> 
 <!-- HEADER SECTION --> 
          <tr>
-            <td style="padding: 10px">
+            <td>
                <table class="col" width="100%">
                   <tr>
-                     <td>
-                        <a href="#"><img class="logo" src="" alt="Walgreens Logo" width="191" title="Walgreens Logo">
+                     <td style="text-align: center;">
+                        <a href="#"><img class="logo" src="images/image01.png" alt="Walgreens Logo" title="Walgreens Logo">
                         </a> 
                      </td>
                   </tr>   
@@ -90,10 +98,10 @@
 <!-- HERO SECTION -->
          <tr>
             <td>
-               <table width="100%" style="margin-bottom:4.15rem;">
+               <table width="100%">
                   <tr>
                      <td>
-                        <img class="hero-image" src="" alt="">
+                        <img class="hero-image" src="images/image02.jpg" alt="Hero image">
                      </td>
                   </tr>
                </table>
@@ -102,23 +110,50 @@
 <!-- NO ANUAL FEE SECTION --> 
          <tr>
             <td>
-               <table width="100%" style="padding:0 100px;">
+               <table width="100%" style="margin-bottom:30px;">
                   <tr>
                      <td>
-                        <p class="name"></p>
+                        <img src="images/image03.jpg" alt="">
+                     </td>
+                  </tr> 
+                  <tr>
+                     <td>
+                        <img src="images/image04.jpg" alt="">
                      </td>
                   </tr>
-                  
+                  <tr>
+                     <td>
+                        <img src="images/image05.jpg" alt="">
+                     </td>
+                  <tr>
+                     <td>
+                        <img src="images/image06.jpg" alt="">
+                     </td>
+                  </tr>
                </table>
             </td>
          </tr>  
  <!-- SHOP SECTION -->    
          <tr>
-            <td style="padding: 20px">
+            <td>
                <table width="100%">
                   <tr>
-                     <td style="padding:45px 0 40px 0;">
-                        <p class="vehicle-list-title">Great Deals on great vehicles</p>
+                     <td>
+                        <img src="images/image07.jpg" alt=""> 
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <table width="100%" style="background-color:#F4F5EF;">
+                  <tr>
+                     <td>
+                        <img src="images/image08.jpg" alt="" style="width:318px;">
+                        <img src="images/image09.jpg" alt="" style="width:318px;">
+                        <img src="images/image10.jpg" alt="" style="width:318px;">
+                        <img src="images/image11.jpg" alt="" style="width:318px;">
                      </td>
                   </tr>
                </table>
@@ -127,10 +162,10 @@
       <!-- APP STORE SECTION -->  
          <tr>
             <td>
-               <table class="trade-in-section" width="100%">
+               <table width="100%">
                   <tr>
-                     <td style="padding:43px 0 32px 0;">
-                        <p class="trade-in-title">Trade in or sell!</p>
+                     <td>
+                        <img src="images/image12.png" alt="">
                      </td>
                   </tr>
                </table>
@@ -140,7 +175,17 @@
          <tr>
             <td>
                <table width="100%">
-                  
+                  <tr>
+                     <td>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                     </td>
+                  </tr>
                </table>
             </td>
          </tr>

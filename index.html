@@ -56,9 +56,21 @@
          color: #171a1b;
          /* border: 1px solid red; */
       }
+      .shop-icon-blocks {
+         max-width: 318px;
+      }
+      @media only screen and (max-width: 550px) {
+         .shop-icon-row {
+            text-align: center;
+         }
+         .shop-icon-blocks {
+            width: 80%;
+         } 
+      }
       
       a {
-         color: #00aed9;
+         color: #284b9b;
+         text-decoration: none;
       }
       .two-col {
          position: relative;
@@ -78,9 +90,9 @@
          line-height: 18px;
          margin-bottom: 15px;
       }
-      .terms-content > a {
-         text-decoration: none;
-      }
+      /* .terms-content > a {
+         
+      } */
       
    </style>
 
@@ -91,13 +103,13 @@
 <body>
 <!---- START OF HTML EMAIL ---->
    <center class="wrapper">
-      <table class="main" width="100%" border="0"cellspacing="0"cellpadding="0" style="background-color:pink;"> 
+      <table class="main" width="100%" border="0"cellspacing="0"cellpadding="0" style="background-color:#fff;"> 
 <!-- HEADER SECTION --> 
          <tr>
             <td>
                <table class="col" width="100%">
                   <tr>
-                     <td style="text-align: center;">
+                     <td style="text-align: center; padding: 20px 0;">
                         <a href="#"><img class="logo" src="images/image01.png" alt="Walgreens Logo" title="Walgreens Logo">
                         </a> 
                      </td>
@@ -111,7 +123,7 @@
                <table width="100%">
                   <tr>
                      <td>
-                        <img class="hero-image" src="images/image02.jpg" alt="Hero image">
+                        <a href="#"><img class="hero-image" src="images/image02.jpg" alt="Hero image"></a>
                      </td>
                   </tr>
                </table>
@@ -159,11 +171,15 @@
             <td>
                <table width="100%" style="background-color:#F4F5EF;">
                   <tr>
-                     <td>
-                        <img src="images/image08.jpg" alt="" style="width:318px;">
-                        <img src="images/image09.jpg" alt="" style="width:318px;">
-                        <img src="images/image10.jpg" alt="" style="width:318px;">
-                        <img src="images/image11.jpg" alt="" style="width:318px;">
+                     <td class="shop-icon-row">
+                     <!-- STORE PICKUP -->   
+                        <a href="https://www.walgreens.com/store-services/store-pickup?" target="_blank" rel="noopener noreferrer"><img class="shop-icon-blocks" src="images/image08.jpg" alt="Pickup today link"></a> 
+                     <!-- DELIVERY LINK -->   
+                        <a href="https://www.walgreens.com/topic/help/same-day-delivery.jsp?ec=hn:EML_FOS_JanuaryCreditCardITA_Decile2_20230122_A_p06waysdd&cid=wagDM41732&wag_mid=1400248645&bid=-725328151" target="_blank" rel="noopener noreferrer"><img class="shop-icon-blocks" src="images/image09.jpg" alt="Same day delivery link"></a> 
+                     <!-- FREE SHIPPING -->   
+                        <a href="https://www.walgreens.com/topic/help/shipping/shipping_help_main.jsp" target="_blank" rel="noopener noreferrer"><img class="shop-icon-blocks" src="images/image10.jpg" alt="Free shipping link"></a> 
+                     <!-- LOCAL STORE HRS -->   
+                        <a href="https://www.walgreens.com/storelocator/find.jsp" target="_blank" rel="noopener noreferrer"><img class="shop-icon-blocks" src="images/image11.jpg" alt="Local store hours link"></a> 
                      </td>
                   </tr>
                </table>
@@ -174,8 +190,8 @@
             <td>
                <table width="100%">
                   <tr>
-                     <td>
-                        <img src="images/image12.png" alt="">
+                     <td style="padding:40px 0;">
+                        <a href="https://www.walgreens.com/topic/mobile/apps/learn_about_mobile_apps.jsp" target="_blank" rel="noopener noreferrer"><img src="images/image12.png" alt="Download app from app store image link"></a>
                      </td>
                   </tr>
                </table>
@@ -186,15 +202,15 @@
             <td>
                <table width="100%">
                   <tr>
-                     <td style="padding:0 20px;">
+                     <td style="padding:0 20px 20px 20px;">
                         <p style="margin-bottom:5px; color:#284B9B; font-size: 18px;">Offer details</p>
-                        <p class="terms-content">*Subject to credit approval. <b>ACCOUNT OPENING OFFER:</b> Walgreens Cash rewards are not legal tender. No cash back. Walgreens Cash rewards good on future purchases. Must be a myWalgreens member to apply. Limit one myWalgreens credit card or one myWalgreens Mastercard per myWalgreens membership. Open a new myWalgreens credit card or myWalgreens Mastercard and use it to make one eligible purchase within 45 days of account opening to earn a $25 Walgreens Cash reward, which will post to your account within ten days of making the eligible purchase. Eligible purchases do not include cash advances, disputed transactions, unauthorized or fraudulent transactions, interest, finance charges, fees and any other transactions that either Synchrony or Walgreen, as the case may be, may determine in its respective sole discretion are not eligible to earn Walgreens Cash rewards or are prohibited by law from earning Walgreens Cash rewards.  In addition, eligible purchases do not include multiple item purchases that also include prescriptions or pharmacy products or services at any Walgreens store or Duane Reade store owned by Walgreen located in Arkansas, New Jersey or New York, prescriptions or pharmacy products ordered online and picked up at these stores, or any prescriptions or pharmacy products that are delivered to an address in Arkansas, New Jersey or New York. Offer subject to change. REWARD PROGRAM: Valid at any Walgreens store, Duane Reade store owned by Walgreen or online. Exclusions Apply. See <a href="#">credit card reward program terms</a> for program details.</p>
+                        <p class="terms-content">*Subject to credit approval. <b>ACCOUNT OPENING OFFER:</b> Walgreens Cash rewards are not legal tender. No cash back. Walgreens Cash rewards good on future purchases. Must be a myWalgreens member to apply. Limit one myWalgreens credit card or one myWalgreens Mastercard per myWalgreens membership. Open a new myWalgreens credit card or myWalgreens Mastercard and use it to make one eligible purchase within 45 days of account opening to earn a $25 Walgreens Cash reward, which will post to your account within ten days of making the eligible purchase. Eligible purchases do not include cash advances, disputed transactions, unauthorized or fraudulent transactions, interest, finance charges, fees and any other transactions that either Synchrony or Walgreen, as the case may be, may determine in its respective sole discretion are not eligible to earn Walgreens Cash rewards or are prohibited by law from earning Walgreens Cash rewards.  In addition, eligible purchases do not include multiple item purchases that also include prescriptions or pharmacy products or services at any Walgreens store or Duane Reade store owned by Walgreen located in Arkansas, New Jersey or New York, prescriptions or pharmacy products ordered online and picked up at these stores, or any prescriptions or pharmacy products that are delivered to an address in Arkansas, New Jersey or New York. Offer subject to change. REWARD PROGRAM: Valid at any Walgreens store, Duane Reade store owned by Walgreen or online. Exclusions Apply. See <a href="https://www.walgreens.com/topic/help/generalhelp/mywalgreens-credit-card-terms-of-use.jsp" target="_blank">credit card reward program terms</a> for program details.</p>
 
                         <p class="terms-content">The myWalgreens Mastercard is issued by Synchrony Bank pursuant to a license by Mastercard International Incorporated.Mastercard and the circles design are registered trademarks of Mastercard International Incorporated.</p>
 
                         <p class="terms-content"><b>† For New Accounts:</b> myWalgreens™ Credit Card Variable Purchase APR is 30.74%. myWalgreens™ Mastercard® Variable Purchase APRs are 21.74%, 27.74% and 30.74%. Minimum Interest Charge is $2. APRs are accurate as of December 1, 2022, and will vary with the market based on Prime Rate.</p>
 
-                        <p class="terms-content"><b>Free Standard Shipping:</b> Free standard shipping on <a href="#">walgreens.com</a> orders $35+, excluding photo products. Weight restrictions apply. See <a href="#">walgreens.com/shipping</a> for more information. Walgreens reserves the right to make changes to or discontinue this offer at any time.</p>
+                        <p class="terms-content"><b>Free Standard Shipping:</b> Free standard shipping on <a href="https://www.walgreens.com/" target="_blank">walgreens.com</a> orders $35+, excluding photo products. Weight restrictions apply. See <a href="https://www.walgreens.com/topic/help/shipping/shipping_help_main.jsp" target="_blank">walgreens.com/shipping</a> for more information. Walgreens reserves the right to make changes to or discontinue this offer at any time.</p>
 
                         <p class="terms-content"><b>Pickup Details:</b> Pickup in as little as 30 minutes based on national averages, actual times may vary. Exclusions and restrictions apply. Pickup or <b>30-minute</b> Pickup is available for eligible items when your order is $10 or more (after promo codes and paperless coupons are applied and before taxes). There is no additional fee for pickup. For Walgreens store locations that are not open 24 hours, orders must be placed at least one hour prior to store closing to be eligible for same-day pickup. Otherwise, the order will be ready next business day. You will receive an email or text (if opted in) when your order is ready for pickup. <b>Orders are not guaranteed to be ready within the 30-minute time window. We will notify you if there is a delay and will hold your order for 72 hours before canceling</b>. Depending on your selected pickup store, you may have up to three options for pickup: curbside, drive-thru or in-store pickup. Orders containing prescriptions may be picked up at the pharmacy counter or drive-thru. Select items (e.g., liquids, perishables, bulky items) are not compatible with drive-thru pickup. If your order contains such an item, you may be asked to pick it up curbside or in store. Orders containing age-restricted items are not eligible for curbside pickup. If your order contains age-restricted items, you will need to pick up your order in store or at the drive-thru and provide a valid government ID to verify your age. Available pickup hours for select age-restricted items may vary by store location.</p>
 
@@ -211,15 +227,20 @@
                   <tr>
                      <td style="padding:0 20px;">
                         <p style="margin-bottom:5px; color:#284B9B; font-size: 18px;">Preferences</p>
-                        <p class="terms-content" style="margin-bottom: 50px;">Was this forwarded from a friend? Click here to join the fun and officially subscribe.
-                        You are receiving this email because rudyjm3@gmail.com is signed up to receive Walgreens communications. If you no longer wish to receive these emails, please click here . We're always here if you'd like to come back.</p>                        
+                        <p class="terms-content" style="margin-bottom: 40px;">Was this forwarded from a friend? Click <a href="https://www.walgreens.com/marketing/emailsignup/signup_main.jsp" target="_blank" rel="noopener noreferrer">here</a> to join the fun and officially subscribe.
+                        You are receiving this email because <a href="mailto:usersemail@gmail.com">usersemail@gmail.com</a> is signed up to receive Walgreens communications. If you no longer wish to receive these emails, please click <a href="https://www.walgreens.com/marketing/emailsignup/emailoptout.jsp" target="_blank" rel="noopener noreferrer" title="Not assigned to email address">here</a>. We're always here if you'd like to come back.</p>                        
                      </td>
                   </tr>
                   <tr>
+                     <td style="padding:0 25px;">
+                        <p style="margin-bottom:5px; color:#284B9B; font-size: 18px;">Contact Us</p>
+                        <p class="terms-content">Have questions, comments or just want to drop us a line? We're always here to listen, so contact us. Our mailing address is Walgreen Co., 200 Wilmot Rd. MS #2002, Deerfield, IL 60015-4620. All rights reserved.</p>                        
+                     </td>
+                  </tr>
+               <!-- ALT VIEW / PRIVACY POLICY -->
+                  <tr>
                      <td style="padding:0 20px;">
-                        <p style="margin-bottom:5px; color:#284B9B; font-size: 18px;">Preferences</p>
-                        <p class="terms-content">Was this forwarded from a friend? Click here to join the fun and officially subscribe.
-                        You are receiving this email because rudyjm3@gmail.com is signed up to receive Walgreens communications. If you no longer wish to receive these emails, please click here . We're always here if you'd like to come back.</p>                        
+                        <p class="terms-content"><a href="#" target="_blank" rel="noopener noreferrer">View as webpage</a> | <a href="https://www.walgreens.com/topic/help/generalhelp/privacyandsecurity.jsp" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>                    
                      </td>
                   </tr>
                </table>
